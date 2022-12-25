@@ -5,7 +5,7 @@ def user_input():
     try:
         my_list = []
         n = int(input("Enter the number of years you'd like to query: "))
-        print(f"Enter the years between 1999 and {current_year} to query play-by-play data for: ")
+        print(f"Enter the individual year(s) between 1999 and {current_year} to query play-by-play data for: ")
 
         for i in range(0, n):
             year = int(input())
