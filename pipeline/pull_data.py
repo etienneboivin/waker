@@ -6,7 +6,7 @@ pd.set_option('display.max_columns', 1000)
 pd.set_option('display.max_rows', 1000)
 
 
-def pull_wp_data(years):
+def ot_transform(df, years):
     df = nfl.import_pbp_data(years=years)
     df.loc[:, 'time_elapsed'] = 3600 - df['game_seconds_remaining'].copy()
     for game_id in df['game_id'].unique():
